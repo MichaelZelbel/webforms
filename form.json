@@ -82,7 +82,7 @@
           "label": "Customer Credit Score",
           "values": [
             {
-              "label": "Ex",
+              "label": "Excellent",
               "value": "excellent"
             },
             {
