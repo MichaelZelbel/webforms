@@ -54,7 +54,10 @@
           },
           "id": "Field_0nhq9qs",
           "key": "textfield_lai80e",
-          "defaultValue": "BH1234"
+          "defaultValue": "BH1234",
+          "validate": {
+            "required": true
+          }
         },
         {
           "label": "Customer ID",
@@ -65,7 +68,10 @@
           },
           "id": "Field_0h0qrl7",
           "key": "textfield_j8u3i",
-          "defaultValue": "12345678"
+          "defaultValue": "12345678",
+          "validate": {
+            "required": true
+          }
         },
         {
           "label": "Case ID",
@@ -76,13 +82,16 @@
           },
           "id": "Field_02o2sx5",
           "key": "textfield_om9y1",
-          "defaultValue": "UPL123456"
+          "defaultValue": "UPL123456",
+          "validate": {
+            "required": true
+          }
         },
         {
           "label": "Customer Credit Score",
           "values": [
             {
-              "label": "Excellent",
+              "label": "Ex",
               "value": "excellent"
             },
             {
@@ -101,7 +110,10 @@
           },
           "id": "Field_0i82uhy",
           "key": "select_ttvwe",
-          "defaultValue": "value"
+          "defaultValue": "value",
+          "validate": {
+            "required": true
+          }
         },
         {
           "label": "Comments",
@@ -124,7 +136,7 @@
           "id": "Field_0af8vtx"
         },
         {
-          "text": "Detailed Documentation: ",
+          "text": "**References** ",
           "type": "text",
           "layout": {
             "row": "Row_0xeuwvb",
