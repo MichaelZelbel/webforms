@@ -4,27 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Camunda Form Demo (Fetch form.json)</title>
+    <title>Camunda Form Demo</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@1/dist/assets/form-js.css" />
     <style>
       body { font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px; }
-      .toolbar { display: flex; gap: 12px; margin-bottom: 16px; align-items: center; }
       #form { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
-      pre { background: #f8fafc; padding: 12px; border-radius: 8px; overflow: auto; }
-      small.hint { color: #6b7280; }
+      /* Hide watermark in bottom-right (form-js / bpmn-js) */
+      .fjs-powered-by, .bjs-powered-by, [class*="powered-by"] { display: none !important; }
     </style>
   </head>
   <body>
-    <h1>Camunda Form Demo (Fetch <code>form.json</code>)</h1>
-    <p class="hint"><small>Serve this folder via a local web server to avoid browser CORS restrictions (e.g., <code>python -m http.server 8000</code>).</small></p>
-    <div class="toolbar">
-      <button id="submitBtn">Submit</button>
-      <button id="resetBtn">Reset</button>
-    </div>
+    <h1>Camunda Form Demo</h1>
     <div id="form"></div>
-    <h3>Output</h3>
-    <pre id="output">No submission yet…</pre>
 
     <script src="https://unpkg.com/@bpmn-io/form-js@1/dist/form-viewer.umd.js"></script>
     <script>
@@ -41,22 +33,10 @@
 
         try {
           const schema = await loadSchema();
-          await form.importSchema(schema, { employeeName: "Ada Lovelace" });
+          await form.importSchema(schema);
         } catch (err) {
           console.error("Failed initializing form:", err);
         }
-
-        form.on("submit", (event) => {
-          const out = document.getElementById("output");
-          out.textContent = JSON.stringify({ data: event.data, errors: event.errors }, null, 2);
-        });
-
-        document.getElementById("submitBtn").addEventListener("click", () => {
-          const result = form.submit();
-          document.getElementById("output").textContent = JSON.stringify(result, null, 2);
-        });
-
-        document.getElementById("resetBtn").addEventListener("click", () => form.reset());
       })();
     </script>
   </body>
