@@ -1,0 +1,197 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "c7b0622"
+  },
+  "schemaVersion": 19,
+  "id": "Form_13k47s9",
+  "components": [
+    {
+      "text": "# **[$TITLE]** ",
+      "type": "text",
+      "layout": {
+        "row": "Row_18n0dx3",
+        "columns": null
+      },
+      "id": "Field_1uehv61"
+    },
+    {
+      "label": "Pause Task",
+      "values": [
+        {
+          "label": "Paused",
+          "value": "paused"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_18n0dx3",
+        "columns": 4
+      },
+      "id": "Field_0bufqs7",
+      "key": "select_vnrzv9"
+    },
+    {
+      "text": "The goal of this process is to handle an incoming loan application and provide the customer with feedback regarding acceptance and options.",
+      "type": "text",
+      "layout": {
+        "row": "Row_10l1gax",
+        "columns": 12
+      },
+      "id": "Field_1i6cjic"
+    },
+    {
+      "label": "",
+      "components": [
+        {
+          "label": "User ID",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0vssb5y",
+            "columns": null
+          },
+          "id": "Field_0nhq9qs",
+          "key": "textfield_lai80e",
+          "defaultValue": "BH1234",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Customer ID",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0vssb5y",
+            "columns": null
+          },
+          "id": "Field_0h0qrl7",
+          "key": "textfield_j8u3i",
+          "defaultValue": "12345678",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Case ID",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0vssb5y",
+            "columns": null
+          },
+          "id": "Field_02o2sx5",
+          "key": "textfield_om9y1",
+          "defaultValue": "UPL123456",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Customer Credit Score",
+          "values": [
+            {
+              "label": "Excellent",
+              "value": "excellent"
+            },
+            {
+              "label": "Good",
+              "value": "good"
+            },
+            {
+              "label": "Poor",
+              "value": "poor"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0nrc6nm",
+            "columns": null
+          },
+          "id": "Field_0i82uhy",
+          "key": "select_ttvwe",
+          "defaultValue": "value",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Comments",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_13j715z",
+            "columns": null
+          },
+          "id": "Field_0fwpfgr",
+          "key": "textarea_w7ne2p"
+        },
+        {
+          "label": "Continue",
+          "action": "submit",
+          "type": "button",
+          "layout": {
+            "row": "Row_1papgrz",
+            "columns": null
+          },
+          "id": "Field_0af8vtx"
+        },
+        {
+          "text": "**References** ",
+          "type": "text",
+          "layout": {
+            "row": "Row_0xeuwvb",
+            "columns": null
+          },
+          "id": "Field_05a1p5b"
+        },
+        {
+          "content": "<div>\n  SOP: <a href=\"https://en.wikipedia.org/wiki/Standard_operating_procedure\" target=\"_blank\" rel=\"noopener noreferrer\">Handle Loan Application ES</a><br>\n  DS:&nbsp;&nbsp;&nbsp; <a href=\"https://en.wikipedia.org/wiki/Standard_operating_procedure\" target=\"_blank\" rel=\"noopener noreferrer\">Handle Loan Application ES</a><br>\n  SOP: <a href=\"https://en.wikipedia.org/wiki/Standard_operating_procedure\" target=\"_blank\" rel=\"noopener noreferrer\">Reply to Client Application</a>\n</div>",
+          "type": "html",
+          "layout": {
+            "row": "Row_0evwzz2",
+            "columns": null
+          },
+          "id": "Field_14lh94k"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_19w54aw",
+        "columns": null
+      },
+      "id": "Field_0ltphmt"
+    },
+    {
+      "label": "",
+      "components": [
+        {
+          "text": "## Case Details",
+          "type": "text",
+          "layout": {
+            "row": "Row_1umjgvs",
+            "columns": null
+          },
+          "id": "Field_1gfx280"
+        },
+        {
+          "text": "Case ID (Camunda)\n**UPL123456**\n<br>\n\n\nCreated on\n**29 Jul 2025-10:32:35**\n",
+          "type": "text",
+          "layout": {
+            "row": "Row_1xzkyfd",
+            "columns": null
+          },
+          "id": "Field_0v22ryi"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_19w54aw",
+        "columns": 4
+      },
+      "id": "Field_16wc8yo"
+    }
+  ],
+  "type": "default"
+}
